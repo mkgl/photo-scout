@@ -170,11 +170,14 @@ public class InstagramContainer extends AbstractContainer implements Container.I
                 log.info("InstagramContainer configurer is not parameterized, default to tag '{}'.", tag);
             }
 
-            for (Media media : result.getData()) {
-                items.put(media.getId(), media);
+            if (result != null && result.getMeta().isSuccess()) {
+                for (Media media : result.getData()) {
+                    items.put(media.getId(), media);
+                }
+                fireItemSetChange();
+            } else {
+                log.warn("Could not get media from Instagram, check your connection/credentials details.");
             }
-
-            fireItemSetChange();
 
         } catch (InstagramException e) {
             e.printStackTrace();

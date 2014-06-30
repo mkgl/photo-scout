@@ -40,6 +40,10 @@ import info.magnolia.ui.vaadin.integration.contentconnector.ContentConnector;
 
 import javax.inject.Inject;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.vaadin.data.Container;
 import com.vaadin.data.Item;
 import com.vaadin.data.util.BeanItem;
@@ -49,17 +53,27 @@ import com.vaadin.data.util.BeanItem;
  */
 public class InstagramContentConnectorImpl implements ContentConnector, InstagramContentConnector {
 
-    private static final String PHOTOSCOUT_INSTAGRAM_CLIENT_ID = "magnolia.photoscout.instagram.oauth.clientId";
-    private static final String PHOTOSCOUT_INSTAGRAM_CLIENT_SECRET = "magnolia.photoscout.instagram.oauth.clientSecret";
-    private static final String PHOTOSCOUT_INSTAGRAM_ACCESSTOKEN = "magnolia.photoscout.instagram.oauth.accessToken";
+    private static final Logger log = LoggerFactory.getLogger(InstagramContentConnectorImpl.class);
+
+    private static final String INSTAGRAM_CLIENT_ID = "instagram.oauth.clientId";
+    private static final String INSTAGRAM_CLIENT_SECRET = "instagram.oauth.clientSecret";
+    private static final String INSTAGRAM_ACCESSTOKEN = "instagram.oauth.accessToken";
 
     private final InstagramContainer container;
 
     @Inject
     public InstagramContentConnectorImpl(MagnoliaConfigurationProperties magnoliaProperties, InstagramContainerConfigurer configurer) {
-        configurer.setClientId(magnoliaProperties.getProperty(PHOTOSCOUT_INSTAGRAM_CLIENT_ID));
-        configurer.setClientSecret(magnoliaProperties.getProperty(PHOTOSCOUT_INSTAGRAM_CLIENT_SECRET));
-        configurer.setAccessToken(magnoliaProperties.getProperty(PHOTOSCOUT_INSTAGRAM_ACCESSTOKEN));
+        String clientId = magnoliaProperties.getProperty(INSTAGRAM_CLIENT_ID);
+        String clientSecret = magnoliaProperties.getProperty(INSTAGRAM_CLIENT_SECRET);
+        String accessToken = magnoliaProperties.getProperty(INSTAGRAM_ACCESSTOKEN);
+        if (StringUtils.isNotBlank(clientId) && StringUtils.isNotBlank(clientSecret) && StringUtils.isNotBlank(accessToken)) {
+            configurer.setClientId(clientId);
+            configurer.setClientSecret(clientSecret);
+            configurer.setAccessToken(accessToken);
+        } else {
+            log.warn("Cannot establish connection to Instagram's API; OAuth credentials are missing in magnolia.properties. Please set the following three properties:\n\t{}\n\t{}\n\t{}",
+                    INSTAGRAM_CLIENT_ID, INSTAGRAM_CLIENT_SECRET, INSTAGRAM_ACCESSTOKEN);
+        }
         container = new InstagramContainer(configurer);
     }
 
