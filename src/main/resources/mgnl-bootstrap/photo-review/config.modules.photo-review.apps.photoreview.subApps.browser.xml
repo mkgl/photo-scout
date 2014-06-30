@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="browser" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:contentNode</sv:value>
+  </sv:property>
+  <sv:property sv:name="class" sv:type="String">
+    <sv:value>info.magnolia.ui.contentapp.browser.BrowserSubAppDescriptor</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2014-06-23T03:06:32.296+02:00</sv:value>
+  </sv:property>
+  <sv:property sv:name="subAppClass" sv:type="String">
+    <sv:value>info.magnolia.ui.contentapp.browser.BrowserSubApp</sv:value>
+  </sv:property>
+  <sv:node sv:name="actions">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2014-06-23T03:45:21.742+02:00</sv:value>
+    </sv:property>
+    <sv:node sv:name="openOnInstagram">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:property sv:name="class" sv:type="String">
+        <sv:value>info.magnolia.photoreview.app.action.OpenOnInstagramActionDefinition</sv:value>
+      </sv:property>
+      <sv:property sv:name="icon" sv:type="String">
+        <sv:value>icon-open-new-window</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2014-06-24T14:07:13.215+02:00</sv:value>
+      </sv:property>
+      </sv:node>
+    <sv:node sv:name="createTask">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:property sv:name="class" sv:type="String">
+        <sv:value>info.magnolia.photoreview.app.action.OpenDialogActionDefinition</sv:value>
+      </sv:property>
+      <sv:property sv:name="dialogName" sv:type="String">
+        <sv:value>photo-review:task</sv:value>
+      </sv:property>
+      <sv:property sv:name="icon" sv:type="String">
+        <sv:value>icon-work-item</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2014-06-23T01:41:04.043+02:00</sv:value>
+      </sv:property>
+      </sv:node>
+  </sv:node>
+  <sv:node sv:name="actionbar">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2014-06-21T18:55:18.755+02:00</sv:value>
+    </sv:property>
+    <sv:node sv:name="sections">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2014-06-21T18:55:25.844+02:00</sv:value>
+      </sv:property>
+      <sv:node sv:name="default">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2014-06-21T20:34:33.410+02:00</sv:value>
+        </sv:property>
+        <sv:node sv:name="groups">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2014-06-21T18:55:45.788+02:00</sv:value>
+          </sv:property>
+          <sv:node sv:name="tasks">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2014-06-21T18:56:15.643+02:00</sv:value>
+            </sv:property>
+            <sv:node sv:name="items">
+              <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                <sv:value>mgnl:contentNode</sv:value>
+              </sv:property>
+              <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                <sv:value>2014-06-21T22:02:18.450+02:00</sv:value>
+              </sv:property>
+              <sv:node sv:name="openOnInstagram">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:contentNode</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                  <sv:value>2014-06-23T03:45:54.255+02:00</sv:value>
+                </sv:property>
+                </sv:node>
+              <sv:node sv:name="createTask">
+                <sv:property sv:name="jcr:primaryType" sv:type="Name">
+                  <sv:value>mgnl:contentNode</sv:value>
+                </sv:property>
+                <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+                  <sv:value>2014-06-21T22:02:45.032+02:00</sv:value>
+                </sv:property>
+                </sv:node>
+            </sv:node>
+          </sv:node>
+        </sv:node>
+        <sv:node sv:name="availability">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2014-06-21T20:34:50.810+02:00</sv:value>
+          </sv:property>
+          <sv:property sv:name="root" sv:type="Boolean">
+            <sv:value>true</sv:value>
+          </sv:property>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="contentConnector">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="class" sv:type="String">
+      <sv:value>info.magnolia.photoreview.app.contentconnector.InstagramContentConnectorDefinition</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2014-06-20T16:17:36.224+02:00</sv:value>
+    </sv:property>
+    </sv:node>
+  <sv:node sv:name="imageProvider">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="imageProviderClass" sv:type="String">
+      <sv:value>info.magnolia.photoreview.app.imageprovider.InstagramImageProvider</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2014-06-23T03:06:59.296+02:00</sv:value>
+    </sv:property>
+    </sv:node>
+  <sv:node sv:name="workbench">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2014-06-20T16:01:11.365+02:00</sv:value>
+    </sv:property>
+    <sv:node sv:name="contentViews">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+        <sv:value>2014-06-23T03:13:59.856+02:00</sv:value>
+      </sv:property>
+      <sv:node sv:name="thumbnail">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="class" sv:type="String">
+          <sv:value>info.magnolia.ui.workbench.thumbnail.ThumbnailPresenterDefinition</sv:value>
+        </sv:property>
+        <sv:property sv:name="implementationClass" sv:type="String">
+          <sv:value>info.magnolia.photoreview.app.workbench.PhotoReviewThumbnailPresenter</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2014-06-23T03:19:07.601+02:00</sv:value>
+        </sv:property>
+        </sv:node>
+      <sv:node sv:name="list">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="class" sv:type="String">
+          <sv:value>info.magnolia.ui.workbench.list.ListPresenterDefinition</sv:value>
+        </sv:property>
+        <sv:property sv:name="implementationClass" sv:type="String">
+          <sv:value>info.magnolia.photoreview.app.workbench.PhotoReviewListPresenter</sv:value>
+        </sv:property>
+        <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+          <sv:value>2014-06-20T16:02:47.172+02:00</sv:value>
+        </sv:property>
+        <sv:node sv:name="columns">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+            <sv:value>2014-06-23T02:30:20.606+02:00</sv:value>
+          </sv:property>
+          <sv:node sv:name="caption">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="class" sv:type="String">
+              <sv:value>info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition</sv:value>
+            </sv:property>
+            <sv:property sv:name="expandRatio" sv:type="Double">
+              <sv:value>3.0</sv:value>
+            </sv:property>
+            <sv:property sv:name="formatterClass" sv:type="String">
+              <sv:value>info.magnolia.photoreview.app.workbench.PhotoCaptionColumnFormatter</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2014-06-23T02:52:36.557+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="propertyName" sv:type="String">
+              <sv:value>caption.text</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="location">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="class" sv:type="String">
+              <sv:value>info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition</sv:value>
+            </sv:property>
+            <sv:property sv:name="expandRatio" sv:type="Double">
+              <sv:value>2.0</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2014-06-23T02:37:49.575+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="propertyName" sv:type="String">
+              <sv:value>location.name</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="user">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="class" sv:type="String">
+              <sv:value>info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition</sv:value>
+            </sv:property>
+            <sv:property sv:name="expandRatio" sv:type="Double">
+              <sv:value>1.0</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2014-06-23T02:41:47.587+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="propertyName" sv:type="String">
+              <sv:value>user.username</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="filter">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="class" sv:type="String">
+              <sv:value>info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition</sv:value>
+            </sv:property>
+            <sv:property sv:name="expandRatio" sv:type="Double">
+              <sv:value>1.0</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2014-06-23T02:41:57.127+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="propertyName" sv:type="String">
+              <sv:value>filter</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="type">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="class" sv:type="String">
+              <sv:value>info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2014-06-23T02:43:07.009+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="propertyName" sv:type="String">
+              <sv:value>type</sv:value>
+            </sv:property>
+            <sv:property sv:name="width" sv:type="Double">
+              <sv:value>60.0</sv:value>
+            </sv:property>
+          </sv:node>
+          <sv:node sv:name="createdDate">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="class" sv:type="String">
+              <sv:value>info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition</sv:value>
+            </sv:property>
+            <sv:property sv:name="formatterClass" sv:type="String">
+              <sv:value>info.magnolia.ui.workbench.column.DateColumnFormatter</sv:value>
+            </sv:property>
+            <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+              <sv:value>2014-06-23T02:36:11.921+02:00</sv:value>
+            </sv:property>
+            <sv:property sv:name="propertyName" sv:type="String">
+              <sv:value>createdTimeAsDate</sv:value>
+            </sv:property>
+            <sv:property sv:name="sortable" sv:type="Boolean">
+              <sv:value>true</sv:value>
+            </sv:property>
+            <sv:property sv:name="width" sv:type="Long">
+              <sv:value>160</sv:value>
+            </sv:property>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+</sv:node>
