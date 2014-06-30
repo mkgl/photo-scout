@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd">
+<module>
+  <name>photo-review</name>
+  <displayName>Photo Scout app</displayName>
+  <description>The Photo Scout app is a simple content app, showing photos from Instagram, and allowing to suggest photos to editors through tasks in the Pulse.</description>
+  <version>${project.version}</version>
+  <!-- <versionHandler>info.magnolia.photoreview.setup.PhotoReviewModuleVersionHandler</versionHandler> -->
+
+  <components>
+    <id>main</id>
+    <type-mapping>
+      <type>info.magnolia.photoreview.app.contentconnector.InstagramContentConnectorDefinition</type>
+      <implementation>info.magnolia.photoreview.app.contentconnector.ConfiguredInstagramContentConnectorDefinition</implementation>
+    </type-mapping>
+  </components>
+
+  <components>
+    <id>app-photoreview</id>
+    <component>
+      <type>info.magnolia.photoreview.app.container.InstagramContainerConfigurer</type>
+      <implementation>info.magnolia.photoreview.app.container.InstagramContainerConfigurer</implementation>
+      <scope>singleton</scope>
+    </component>
+  </components>
+
+  <components>
+    <id>app-photoreview-config</id>
+    <component>
+      <type>info.magnolia.photoreview.app.config.PhotoReviewConfigPresenter</type>
+      <implementation>info.magnolia.photoreview.app.config.PhotoReviewConfigPresenter</implementation>
+    </component>
+    <component>
+      <type>info.magnolia.photoreview.app.config.PhotoReviewConfigView</type>
+      <implementation>info.magnolia.photoreview.app.config.PhotoReviewConfigViewImpl</implementation>
+    </component>
+  </components>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.3/*</version>
+    </dependency>
+    <dependency>
+      <name>ui-framework</name>
+      <version>5.3/*</version>
+    </dependency>
+    <dependency>
+      <name>ui-admincentral</name>
+      <version>5.3/*</version>
+    </dependency>
+    <dependency>
+      <name>ui-contentapp</name>
+      <version>5.3/*</version>
+    </dependency>
+  </dependencies>
+
+</module>

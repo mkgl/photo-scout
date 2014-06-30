@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>info.magnolia</groupId>
+    <artifactId>magnolia-parent-pom-community-module</artifactId>
+    <version>28</version>
+  </parent>
+  <groupId>info.magnolia.sandbox</groupId>
+  <artifactId>magnolia-photo-review</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Photo Scout app</name>
+  <description>The Photo Scout app is a simple content app, showing photos from Instagram, and allowing to suggest photos to editors through tasks in the Pulse.</description>
+  <properties>
+    <javaVersion>1.6</javaVersion>
+    <magnoliaVersion>5.3-SNAPSHOT</magnoliaVersion>
+    <magnoliaUiVersion>5.3.1-SNAPSHOT</magnoliaUiVersion>
+    <magnoliaTasksVersion>1.0.1-SNAPSHOT</magnoliaTasksVersion>
+    <magnoliaDamVersion>2.0</magnoliaDamVersion>
+  </properties>
+
+  <scm>
+    <connection>scm:git:http://git.magnolia-cms.com/user/mgeljic/photo-scout</connection>
+    <developerConnection>scm:git:https://git.magnolia-cms.com/user/mgeljic/photo-scout</developerConnection>
+    <url>http://git.magnolia-cms.com/gitweb/?p=user/mgeljic/photo-scout.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-core</artifactId>
+      <version>${magnoliaVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.ui</groupId>
+      <artifactId>magnolia-ui-api</artifactId>
+      <version>${magnoliaUiVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.ui</groupId>
+      <artifactId>magnolia-ui-admincentral</artifactId>
+      <version>${magnoliaUiVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.ui</groupId>
+      <artifactId>magnolia-ui-contentapp</artifactId>
+      <version>${magnoliaUiVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>info.magnolia.dam</groupId>
+      <artifactId>magnolia-dam-api</artifactId>
+      <version>${magnoliaDamVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.dam</groupId>
+      <artifactId>magnolia-dam-app</artifactId>
+      <version>${magnoliaDamVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>info.magnolia.task</groupId>
+      <artifactId>magnolia-task-management</artifactId>
+      <version>${magnoliaTasksVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.instagram4j</groupId>
+      <artifactId>instagram4j</artifactId>
+      <version>0.0.4</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>jcl-over-slf4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>log4j-over-slf4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <!-- For test -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>1.8.5</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
