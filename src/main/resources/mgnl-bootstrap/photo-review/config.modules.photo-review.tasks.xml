@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="tasks" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:content</sv:value>
+  </sv:property>
+  <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+    <sv:value>2014-06-22T01:40:20.880+02:00</sv:value>
+  </sv:property>
+  <sv:node sv:name="review">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="mgnl:lastModified" sv:type="Date">
+      <sv:value>2014-06-22T16:43:23.896+02:00</sv:value>
+    </sv:property>
+    <sv:property sv:name="taskView" sv:type="String">
+      <sv:value>photo-review:review</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>
