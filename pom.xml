@@ -14,9 +14,9 @@
   <description>The Photo Scout app is a simple content app, showing photos from Instagram, and allowing to suggest photos to editors through tasks in the Pulse.</description>
   <properties>
     <javaVersion>1.6</javaVersion>
-    <magnoliaVersion>5.3-SNAPSHOT</magnoliaVersion>
-    <magnoliaUiVersion>5.3.1-SNAPSHOT</magnoliaUiVersion>
-    <magnoliaTasksVersion>1.0.1-SNAPSHOT</magnoliaTasksVersion>
+    <magnoliaVersion>5.3.1</magnoliaVersion>
+    <magnoliaUiVersion>5.3.1</magnoliaUiVersion>
+    <magnoliaTasksVersion>1.0.1</magnoliaTasksVersion>
     <magnoliaDamVersion>2.0</magnoliaDamVersion>
   </properties>
 
