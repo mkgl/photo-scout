@@ -1,0 +1,18 @@
+h1. Photo Scout
+
+h2. An Instagram-based demo app for Magnolia 5
+
+!doc/photo-scout-screenshot.png!
+
+Photo Scout is a simple Magnolia "content app":http://documentation.magnolia-cms.com/display/DOCS/Content+app+framework, showing photos from Instagram, and allowing to suggest photos to editors through tasks in the Pulse.
+
+h2. OAuth credentials required
+
+In order to establish connection to Instagram's API, OAuth credentials are required. You need to register on Instagram's developer site to get these -- see http://instagram.com/developer.
+
+The following three keys should then be configured in your _magnolia.properties_:
+
+* @instagram.oauth.clientId@
+* @instagram.oauth.clientSecret@
+* @instagram.oauth.accessToken@
+
