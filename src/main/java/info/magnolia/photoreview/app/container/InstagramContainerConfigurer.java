@@ -43,7 +43,7 @@ public class InstagramContainerConfigurer {
     private String accessToken;
 
     private String feedType;
-    private String tagName = "artbasel";
+    private String tagName = "mconf14";
     private String userName = "mkgl";
 
     // OAUTH PROPERTIES

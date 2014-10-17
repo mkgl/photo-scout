@@ -128,7 +128,7 @@
                   <sv:value>info.magnolia.ui.form.field.definition.TextFieldDefinition</sv:value>
                 </sv:property>
                 <sv:property sv:name="defaultValue" sv:type="String">
-                  <sv:value>artbasel</sv:value>
+                  <sv:value>mconf14</sv:value>
                 </sv:property>
                 <sv:property sv:name="mgnl:lastModified" sv:type="Date">
                   <sv:value>2014-06-24T22:26:19.218+02:00</sv:value>
