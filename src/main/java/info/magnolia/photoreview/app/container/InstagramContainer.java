@@ -80,6 +80,8 @@ public class InstagramContainer extends AbstractContainer implements Container.I
         this.configurer = configurer;
     }
 
+    // CONTAINER READ OPERATIONS
+
     @Override
     public Item getItem(Object itemId) {
         if (itemId != null) {
@@ -128,6 +130,8 @@ public class InstagramContainer extends AbstractContainer implements Container.I
     public boolean containsId(Object itemId) {
         return items.containsKey(itemId);
     }
+
+    // REFRESHABLE IMPL
 
     @Override
     public void refresh() {
@@ -263,16 +267,6 @@ public class InstagramContainer extends AbstractContainer implements Container.I
     }
 
     @Override
-    public Object addItemAfter(Object previousItemId) throws UnsupportedOperationException {
-        throw new UnsupportedOperationException("Container doesn't support write operations.");
-    }
-
-    @Override
-    public Item addItemAfter(Object previousItemId, Object newItemId) throws UnsupportedOperationException {
-        throw new UnsupportedOperationException("Container doesn't support write operations.");
-    }
-
-    @Override
     public int indexOfId(Object itemId) {
         List<String> keys = new ArrayList<String>(items.keySet());
         return keys.indexOf(itemId);
@@ -290,6 +284,16 @@ public class InstagramContainer extends AbstractContainer implements Container.I
             refreshMediaCache(numberOfItems);
         }
         return new ArrayList<String>(items.keySet());
+    }
+
+    @Override
+    public Object addItemAfter(Object previousItemId) throws UnsupportedOperationException {
+        throw new UnsupportedOperationException("Container doesn't support write operations.");
+    }
+
+    @Override
+    public Item addItemAfter(Object previousItemId, Object newItemId) throws UnsupportedOperationException {
+        throw new UnsupportedOperationException("Container doesn't support write operations.");
     }
 
     @Override
